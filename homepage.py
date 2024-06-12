@@ -8,9 +8,9 @@
 # 출처: https://youtu.be/TXSOitGoINE?si=eAgI9KdB5sdkJ9t3
 # 출처: chat-gpt
 # 출처: 뤼튼
-# """
-
-
+# 출처:https://wikidocs.net/234009
+# 출처:https://wikidocs.net/231431
+"""
 import json
 import requests
 import streamlit as st
@@ -27,13 +27,16 @@ st.title("🤖서비스개발I 기말팀플🤖")
 st.sidebar.success("위 페이지를 선택하세요.")
 
 #### 로티파일 넣기
+#### 로티파일 넣기
+import os
+import json
+
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
 # 로티 파일 경로 설정 (윈도우 스타일)
-lottie_file_path = "images\\coding.json"
-
+lottie_file_path = os.path.join(os.path.dirname(__file__), "images", "coding.json")
 # 로티 파일 로드
 lottie_coding = load_lottiefile(lottie_file_path)
 
