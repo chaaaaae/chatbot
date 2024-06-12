@@ -1,10 +1,9 @@
 import streamlit as st
-from langchain.llms import OpenAI  # 수정된 import 문
+from langchain.llms import openai
 from streamlit_extras.let_it_rain import rain
 import os
 import zipfile
 import json
-import openai
 
 # 페이지 설정
 st.set_page_config(
@@ -17,7 +16,7 @@ st.title('🐈‍⬛나만의 집사님🐈‍⬛')  # 제목 표시
 st.sidebar.video("https://youtu.be/FoO7Pmx0bE4")
 
 # OpenAI API 키 설정
-os.environ["OPENAI_API_KEY"]="YOUR_OPENAI_API_KEY"
+os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
 
 # ZIP 파일 해제 및 JSON 데이터 읽기
 zip_file_path = "data/TL_02. 추천직업 카테고리_01. 기술계열.zip"  # 파일 경로 설정
@@ -46,11 +45,13 @@ except UnicodeDecodeError:
 
 # 응답 생성 함수
 def generate_response(input_text):
-    llm = OpenAI(model_name='gpt-3.5-turbo', temperature=0)
-    response = llm(input_text)
-    # 필요한 경우 career_data를 응답에 통합할 수 있습니다.
-    # 여기서는 모델의 응답만 반환합니다.
-    return response
+    try:
+        llm = openai(model_name='gpt-3.5-turbo', temperature=0)
+        response = llm(input_text)
+        return response
+    except Exception as e:
+        st.error(f"응답 생성 중 오류가 발생했습니다: {e}")
+        return "오류가 발생했습니다. 다시 시도해 주세요."
 
 # 세션 상태 초기화
 if 'conversation' not in st.session_state:
