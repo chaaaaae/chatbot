@@ -1,52 +1,89 @@
-# 🎯 Career-AI-Consultant
+# 🤖 AI-Career-Counselor
+> AI 기술을 활용한 맞춤형 진로 상담 서비스
 
-## 📝 프로젝트 소개
-Career-AI-Consultant는 AI 기술을 활용한 맞춤형 진로 상담 서비스입니다. 사용자의 적성, 핵심 역량, 성격 요인을 종합적으로 분석하여 최적의 진로를 추천해주는 웹 애플리케이션입니다.
+<br>
 
-## 🎯 프로젝트 목표
-- AI 기반의 종합적인 진로 상담 시스템 개발
-- 사용자의 다양한 특성을 반영한 맞춤형 진로 추천
-- 시간과 비용 효율적인 진로 탐색 서비스 제공
+## 🎯 Overview
+`AI-Career-Counselor`는 AI 기술을 활용하여 사용자의 적성과 성향을 분석하고 맞춤형 진로를 추천해주는 상담 서비스입니다. 다양한 검사 데이터를 종합적으로 분석하여 최적의 진로 방향을 제시합니다.
 
-## 🛠 기술 스택
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
+<br>
 
-## ✨ 주요 기능
-- 🤖 AI 기반 진로 상담 챗봇
-- 📊 사용자 맞춤형 진로 분석
-- 💾 상담 내역 저장 및 조회
-- 🎨 인터랙티브 UI/UX
+## ⚙️ Tech Stack
+```
+Frontend: Streamlit
+Backend: Python
+AI Model: LangChain, OpenAI
+Database: JSON
+Version Control: Git
+```
 
-## 🔍 상세 기능
-1. 홈페이지
-   - 애니메이션 효과를 활용한 인터랙티브 디자인
-   - 직관적인 사이드바 네비게이션
-   - 이모지를 활용한 사용자 친화적 인터페이스
+<br>
 
-2. 챗봇 기능
-   - OpenAI API 연동
-   - RAG Chain을 활용한 맞춤형 응답 생성
-   - 대화 내역 저장 및 불러오기
-   - JSON 형식의 데이터 관리
+## 🔍 Core Features
 
-## 👥 개발팀
-- 김나연 (202284046)
-- 박소윤 (202284050)
-- 박채현 (202284046)
+### 1. AI 기반 진로 상담
+- 종합적인 진로 분석 시스템
+- 맞춤형 직업 추천
+- 상세 직업 정보 제공
 
-## 🚀 시작하기
+### 2. 사용자 친화적 인터페이스
+- 직관적인 웹 인터페이스
+- 애니메이션 효과와 이모지 활용
+- 사이드바를 통한 편리한 네비게이션
+
+### 3. 대화 기록 관리
+- 상담 내용 자동 저장
+- 이전 상담 내역 조회
+- 지속적인 진로 탐색 지원
+
+<br>
+
+## 🛠️ Development Process
+
+### Phase 1: 서비스 구축
+```mermaid
+graph LR
+A[프로젝트 기획] --> B[기본 기능 구현]
+B --> C[추가 기능 개발]
+C --> D[UI/UX 개선]
+```
+
+### Phase 2: 배포 및 최적화
+```mermaid
+graph LR
+A[코드 정리] --> B[GitHub 업로드]
+B --> C[Streamlit 배포]
+C --> D[서비스 안정화]
+```
+
+<br>
+
+## 🚀 Getting Started
+
 ```bash
-# 저장소 클론
-git clone https://github.com/yourusername/Career-AI-Consultant.git
+# Repository Clone
+git clone https://github.com/username/AI-Career-Counselor.git
 
-# 필요한 패키지 설치
+# Install Dependencies
 pip install -r requirements.txt
 
-# Streamlit 실행
+# Run Application
 streamlit run app.py
 ```
 
-## 📄 라이센스
-This project is licensed under the MIT License
+<br>
+
+## 👥 Developers
+- [@김나연](https://github.com/username) - 202284046
+- [@박소윤](https://github.com/username) - 202284050
+- [@박채현](https://github.com/username) - 202284046
+
+<br>
+
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+<br>
+
+---
+*AI-Career-Counselor는 더 나은 진로 상담 경험을 위해 만들어졌습니다* 🎓✨
