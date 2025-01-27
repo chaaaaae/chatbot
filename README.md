@@ -74,9 +74,9 @@ streamlit run app.py
 <br>
 
 ## 👥 Developers
-- [@김나연](https://github.com/username) - 202284046
-- [@박소윤](https://github.com/username) - 202284050
-- [@박채현](https://github.com/username) - 202284046
+- 김나연 202284046
+- 박소윤 202284050
+- 박채현 202284054
 
 <br>
 
